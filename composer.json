@@ -1,0 +1,34 @@
+{
+    "name": "SX WPComposer Start Set",
+    "version": "1.0.0",
+    "homepage": "https://gitlab.com/slipnox/sx_wp_composer.git",
+    "description": "Wordpress with composer development set.",
+    "authors": [{
+            "name": "Abrahan Silverio",
+            "email": "abrahansm@gmail.com",
+            "homepage": "http://asilverio.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "1.0.x-dev",
+        "johnpbloch/wordpress": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp_core"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "rm -f wp_core/composer.json",
+            "rm -f wp_core/readme.html",
+            "rm -f wp_core/license.txt",
+            "rm -rf wp_core/wp-content/themes/twenty*",
+            "rm -rf vendor && rm composer.lock",
+            "git reset --hard && git status"
+        ]
+    },
+    "require-dev": {
+
+    }
+}
