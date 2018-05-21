@@ -5,12 +5,7 @@ wp_core/wp-includes/
 !wp_core/wp-content/languages/
 !wp_core/wp-content/themes/
 !wp_core/wp-content/plugins/
-wp_core/wp-content/plugins/akismet
-wp_core/wp-content/themes/twenty*/
 
-
-/wp_core/wp-content/plugins/index.php
-/wp_core/wp-content/plugins/hello.php
 wp_core/wp-content/themes/index.php
 /wp_core/wp-mail.php
 /wp_core/wp-trackback.php
@@ -26,10 +21,9 @@ wp_core/wp-content/themes/index.php
 /wp_core/wp-load.php
 /wp_core/.htaccess
 /wp_core/wp-blog-header.php
-/wp_core/robots.txt
 /wp_core/license.txt
 /wp_core/wp-comments-post.php
 /wp_core/wp-config.php
 /wp_core/xmlrpc.php
-/wp_core/composer.json
 /wp_core/wp-content/plugins/
+!/wp_core/wp-content/plugins/
